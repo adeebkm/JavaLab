@@ -1,28 +1,15 @@
 import java.util.Scanner;
-
-
-public class fib {
-    static int fib(int n) {
-        if (n == 0) {
-            return 0;
-        } else if (n == 1) {
-            return 1;
-        } else {
-            return (fib(n - 1) + fib(n - 2));
-        }
+class fibonacci{
+    static int fib(int n)
+    {
+        if(n<=1)
+            return n;
+        return fib(n-1)+fib(n-2);
     }
-
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n;
-        System.out.println("Enter the number of terms needed");
-        n = sc.nextInt();
-        int i = 0;
-        System.out.print("the fibonacci series is: ");
-        for(i=0;i<n;i++) {
-            System.out.print(fib(i) + " ");
-        }
-
-
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n = sc.nextInt();
+        for(int i=0;i<n;i++)
+            System.out.println(fib(i)+" ");
     }
 }
