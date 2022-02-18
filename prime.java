@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class fib {
+public class prime {
     public static int i=2;
     public static boolean isPrime(int n){
         if (n==0||n==1)
